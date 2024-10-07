@@ -3,8 +3,11 @@ import jjmbg1 from '../assets/img/jjmbg1.jpg'
 import card1 from '../assets/img/card1.jpg'
 import bulok3 from '../assets/img/bulok3.jpg'
 import { Link } from 'react-scroll';
-import Footer from "../components/Footer";
-
+import Footer from "../components/Footer"
+import calamansi from '../assets/img/calamansi.jpg'
+import conditioner from '../assets/img/conditioner.jpg'
+import limon from '../assets/img/limon.jpg'
+import paste from '../assets/img/paste.jpg'
 
 function Home(){
     return(
@@ -18,93 +21,80 @@ function Home(){
                 </div>
             </section>
 
-                    <section data-aos="fade-up" id='2' className="bg-cover bg-center bg-no-repeat h-[80vh] flex flex-col justify-center items-center text-center " >
-                    <div className=" bg-white/70 p-8 rounded-lg">
-                    <h2 className="flex flex-col justify-center items-center text-4xl font-bold mb-4 text-black" >Products</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 max-w-5xl mx-auto ">
-                        <div className="rounded-lg p-4  bg-gray-800 max-w-2xl ">
-                            <h3 className="text-xl font-bold text-emerald-400">JJM Calamansi Dishwashing Liquid</h3>
-                            <button className="btn btn-outline btn-accent my-5" onClick={() => document.getElementById('my_modal_1').showModal()}>
-                            See Products
-                            </button>
-                            <dialog id="my_modal_1" className="modal">
-                            <div className="modal-box">
-                                <h3 className="font-bold text-lg">JJM Calamansi Dishwashing Liquid</h3>
-                                <div className="flex items-center justify-center">
-                                <img src='' />
+            <section data-aos="fade-up" id='2' className="bg-cover bg-center bg-no-repeat h-screen min-w-min flex flex-col justify-center items-center text-center">
+                    <div className="bg-white/70 p-8 rounded-lg">
+                        <h2 className="flex flex-col justify-center items-center text-4xl font-bold mb-4 text-black">Products</h2>
+                        <div className="grid grid-cols-2 gap-x-8 gap-y-8">
+                        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                            <div className="flex justify-center">
+                            <img className="p-8 rounded-t-lg h-64" src={calamansi} alt="" />\
+                            </div>
+                            </a>
+                            <div className="px-5 pb-5">
+                            <a href="#">
+                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">JJM Calamansi Dishwashing Liquid</h5>
+                            </a>
+                            <div className="flex items-center justify-between my-5">
+                                <span className="text-3xl font-bold text-gray-900 dark:text-white">₱28</span>
+                                <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                            <div className="flex justify-center">
+                                <img className="p-8 rounded-t-lg h-64" src={limon} alt="" />
                                 </div>
-                            <p className="pt-5">28 Pesos</p>
-                            <p className="">Description</p>
-                            <div className="modal-action">
-                            <form method="dialog">
-                                <button className="btn">Close</button>
-                            </form>
+                            </a>
+                            <div className="px-5 pb-5">
+                            <a href="#">
+                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">JJM Lemon Dishwashing Liquid</h5>
+                            </a>
+                            <div className="flex items-center justify-between my-5">
+                                <span className="text-3xl font-bold text-gray-900 dark:text-white">₱25</span>
+                                <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy Now</a>
+                            </div>
                             </div>
                         </div>
-                        </dialog>
+
+                        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                            <div className="flex justify-center">
+                            <img className="p-8 rounded-t-lg h-64" src={conditioner} alt="" />
+                            </div>
+                            </a>
+                            <div className="px-5 pb-5">
+                            <a href="#">
+                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">JJM Antibac Fabric Conditioner</h5>
+                            </a>
+                            <div className="flex items-center justify-between my-5">
+                                <span className="text-3xl font-bold text-gray-900 dark:text-white">₱35</span>
+                                <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                            <div className="flex justify-center">
+                            <img className="p-8 rounded-t-lg h-64" src={paste} alt="" />
+                            </div>
+                            </a>
+                            <div className="px-5 pb-5">
+                            <a href="#">
+                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">JJM Calamansi Dishwashing Paste</h5>
+                            </a>
+                            <div className="flex items-center justify-between my-5">
+                                <span className="text-3xl font-bold text-gray-900 dark:text-white">₱55</span>
+                                <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
                     </div>
-                    <div className="bg-gray-800 rounded-lg p-4 shadow-lg " >
-                    <h3 className="text-xl font-bold text-emerald-400">JJM Lemon Dishwashing</h3>
-                    <button className="btn btn-outline btn-accent my-5" onClick={()=>document.getElementById('my_modal_2').showModal()}>See Products</button>
-                        <dialog id="my_modal_2" className="modal">
-                        <div className="modal-box">
-                            <h3 className="font-bold text-lg">JJM Lemon Dishwashing</h3>
-                            <div className='flex items-center justify-center '>
-                            <img src='' />
-                            </div>
-                            <p className="pt-5">25 Pesos</p>
-                            <p className="">Description</p>
-                            
-                            <div className="modal-action">
-                            <form method="dialog">
-                                <button className="btn">Close</button>
-                            </form>
-                            </div>
-                        </div>
-                        </dialog>
-                    </div>
-                    <div className="bg-gray-800 rounded-lg p-4 shadow-lg" >
-                    <h3 className="text-xl font-bold text-emerald-400">JJM Antibac Fabric </h3>
-                    <button className="btn btn-outline btn-accent my-5" onClick={()=>document.getElementById('my_modal_3').showModal()}>See Products</button>
-                        <dialog id="my_modal_3" className="modal">
-                        <div className="modal-box">
-                            <h3 className="font-bold text-lg">JJM Antibac Fabric</h3>
-                            <div className='flex items-center justify-center '>
-                            <img src='' />
-                            </div>
-                            <p className="pt-5">35 Pesos</p>
-                            <p className="">Description</p>
-                            
-                            <div className="modal-action">
-                            <form method="dialog">
-                                <button className="btn">Close</button>
-                            </form>
-                            </div>
-                        </div>
-                        </dialog>
-                    </div>
-                    <div className="bg-gray-800 rounded-lg p-4 shadow-lg">
-                    <h3 className="text-xl font-bold text-emerald-400">JJM Calamansi Dishwashing Paste</h3>
-                    <button className="btn btn-outline btn-accent my-5" onClick={()=>document.getElementById('my_modal_4').showModal()}>See Products</button>
-                        <dialog id="my_modal_4" className="modal">
-                        <div className="modal-box ">
-                            <h3 className="font-bold text-lg mb-5">JJM Calamansi</h3>
-                            <div className='flex items-center justify-center '>
-                            <img src='' />
-                            </div>
-                            <p className="pt-5">55 Pesos</p>
-                            <p className="">Description</p>
-                            <div className="modal-action">
-                            <form method="dialog">
-                                <button className="btn">Close</button>
-                            </form>   
-                            </div>
-                            </div>
-                            </dialog>
-                          </div>
-                        </div>
-                        </div>
-                    </section>    
+                </section>  
 
                     <section data-aos="fade-up" id='3' className="bg-cover bg-center bg-no-repeat h-[80vh] flex flex-col justify-center items-center text-center  "> 
                     <div className='bg-white/70 rounded-lg '>
@@ -113,15 +103,23 @@ function Home(){
                             <div href="#" className="flex  items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl">
                         <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={card1} alt=""/>
                         <div className="flex flex-col justify-between p-4 leading-normal">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-grey-600">Noteworthy technology acquisitions 2021</h5>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <h2 className="mt-4 text-lg text-black">
+                        Basta Best Buy at Best Quality JJM nayan!
+                        </h2>
+                        <p className="mt-4">
+                            We take pride in our state-of-the-art manufacturing processes, which prioritize sustainability and quality at every step. 
+                            By using biodegradable ingredients, recyclable packaging, and reducing waste, we are working towards a cleaner, greener future.
+                        </p>
                         </div>
                             </div>
                             <div className="flex lg:flex-row-reverse items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl mt-4 ">
                             <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={bulok3} alt=""/>
                             <div className="flex flex-col justify-between p-4 leading-normal">
-                                <h5 className="mb-2 text-2xl font-bold tracking-tight text-grey-600">Noteworthy technology acquisitions 2021</h5>
-                                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                            <h2 className="text-lg font-bold mb-2 text-black">Contact Us</h2>
+                            <ul className="space-y-2">
+                                <li>📍 Bulacan, Philippines · San Jose del Monte, Philippines</li>
+                                <li>✉️ negosyongpaunlad@gmail.com</li>
+                            </ul>
                             </div>
                          </div>
                             </div>  
